@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.DbService.Interfaces
+namespace App.DbService
 {
-    public interface IStudentSubject<T>:IRepository<T>
+    public interface IStudentDbService: IRepository<Student,int>
     {
+        IEnumerable<Student> Search(string quary);
     }
 }

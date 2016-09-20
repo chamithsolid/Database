@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.DbService.Interfaces
 {
-    public interface ISubject<T>: IRepository<T>
+    public interface ISubjectDbService: IRepository<Subject, int>
     {
     }
 }

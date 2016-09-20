@@ -65,6 +65,10 @@
       <Project>{a226d009-00e7-4a51-a1d9-4b99476ea093}</Project>
       <Name>App.DbAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\App.Utility\App.Utility.csproj">
+      <Project>{c9b6ece5-49ed-4c13-a411-cbc8cb2362c0}</Project>
+      <Name>App.Utility</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\GIT\WEB_PRO\App.Domain\App.Domain.csproj">
       <Project>{bed6607c-f91d-4719-b929-a1b1ad716bc7}</Project>
       <Name>App.Domain</Name>
