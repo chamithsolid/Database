@@ -1,4 +1,5 @@
 ﻿using App.DbService;
+using App.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace App.Api.Controllers
 {
     public class BaseController : ApiController
     {
-        IStudent student;
+        protected IStudentDbService student;
         public BaseController() {
-            student = new Student();
+            student = new StudentDbService();
         }
     }
 }

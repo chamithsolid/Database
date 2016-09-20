@@ -3,28 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WEB_PRO", "D:\GIT\WEB_PRO\", "{F5C28651-F4A4-4BFA-82FE-8DC6CADD987E}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_8813"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WEB_PRO\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8813\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_8813"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WEB_PRO\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8813\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "8813"
-		SlnRelativePath = "..\..\WEB_PRO\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{D572F7B7-B234-415D-A31F-93AD5DDFF9BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Domain", "D:\GIT\WEB_PRO\App.Domain\App.Domain.csproj", "{BED6607C-F91D-4719-B929-A1B1AD716BC7}"
@@ -45,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F5C28651-F4A4-4BFA-82FE-8DC6CADD987E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5C28651-F4A4-4BFA-82FE-8DC6CADD987E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5C28651-F4A4-4BFA-82FE-8DC6CADD987E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5C28651-F4A4-4BFA-82FE-8DC6CADD987E}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{BED6607C-F91D-4719-B929-A1B1AD716BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BED6607C-F91D-4719-B929-A1B1AD716BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED6607C-F91D-4719-B929-A1B1AD716BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU

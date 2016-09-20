@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomException\ModelStateDictionary.cs" />
+    <Compile Include="CustomException\ModelStateValidationException.cs" />
     <Compile Include="CustomException\ObjectNotFoundException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

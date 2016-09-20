@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using App.Domain;
 using App.DbAccess;
 using App.Utility;
+using App.Utility.CustomException;
 
 namespace App.DbService
 {
-    public class StudentDbService : PlutoContext, IStudent
+    public class StudentDbService : PlutoContext, IStudentDbService
     {
         PlutoContext dba = null;
         public StudentDbService() { dba = new PlutoContext(); }

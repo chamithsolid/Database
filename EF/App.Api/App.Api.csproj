@@ -335,6 +335,10 @@
       <Project>{a226d009-00e7-4a51-a1d9-4b99476ea093}</Project>
       <Name>App.DbAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\App.DbService\App.DbService.csproj">
+      <Project>{5FBD6D98-3FC9-424B-936C-9BDEA4157B79}</Project>
+      <Name>App.DbService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

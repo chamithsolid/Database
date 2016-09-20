@@ -1,0 +1,5 @@
+D:\GIT\DATABASE\EF\App.Utility\obj\Debug\App.Utility.csprojResolveAssemblyReference.cache
+D:\GIT\DATABASE\EF\App.Utility\bin\Debug\App.Utility.dll
+D:\GIT\DATABASE\EF\App.Utility\bin\Debug\App.Utility.pdb
+D:\GIT\DATABASE\EF\App.Utility\obj\Debug\App.Utility.dll
+D:\GIT\DATABASE\EF\App.Utility\obj\Debug\App.Utility.pdb
