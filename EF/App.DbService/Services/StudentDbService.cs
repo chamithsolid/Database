@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using App.Domain;
 using App.DbAccess;
+using App.Utility;
 
 namespace App.DbService
 {
@@ -34,34 +35,76 @@ namespace App.DbService
                 var obj = dba.Students.Where(p => p.Id == Id).FirstOrDefault();
                 if (obj == null)
                 {
-                    throw new Exception("");
+                    throw new ObjectNotFoundException();
                 }
+                dba.Students.Remove(obj);
+                dba.SaveChanges();
             }
             catch 
             {
-
                 throw;
             }
         }
 
         public IEnumerable<Student> Read()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return dba.Students.ToList();
+            }
+            catch  
+            {
+                throw;
+            }
         }
 
         public Student Read(int Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var obj =  dba.Students.Where(p=>p.Id==Id).FirstOrDefault();
+                if (obj == null)
+                {
+                    throw new ObjectNotFoundException();
+                }
+                return obj;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public IEnumerable<Student> Search(string quary)
         {
-            throw new NotImplementedException();
+            try
+            {
+               return dba.Students.Where(p => p.StudentName.ToLower().StartsWith(quary.ToLower().Trim())).ToList();
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public void Update(Student item)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var obj = dba.Students.Where(p => p.Id == item.Id).FirstOrDefault();
+                if (obj == null)
+                {
+                    throw new ObjectNotFoundException();
+                }
+                obj.Email = item.Email;
+                obj.Phone = item.Phone;
+                obj.StudentName = item.StudentName;
+                dba.SaveChanges();
+            }
+            catch
+            {
+                throw;
+            }
         }
     }
 }
